@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/background2.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija al hacer scroll */
+  color: white; /* Color del texto, ajustable según tu imagen de fondo */
+}
+
+.container {
+  position: relative;
+  padding: 10px; /* Ajusta el padding para dejar espacio para el footer */
+}
+.example-button-row a {
+  display: block;
+  width: 100%;
+
+  margin: 5px ; /* Centra y separa los botones */
+}
+.btn-primary {
+  background-color: #2271d3;
+  border-color: #e70000;
+}
+
+.col-md-4 {
+  background-color: #242735;
+  margin-top: 10px; /* Centra las columnas */
+  border-radius: 10px;
+  color: white;
+}
+
+#categorias {
+  display: flex;
+  justify-content: space-evenly; /* Distribuye el espacio alrededor de las columnas */
+}
+
+#center  {
+  margin-top: 3%; /* Ajusta según sea necesario */
+  margin-left: 1%; /* Ajusta según sea necesario */
+
+  max-width: 600px;
+  background-color: #808080;
+  border-radius: 5px;
+  color: white;
+
+}
+
+
+#columnaIz {
+  background-color: #e70000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+#columnaDer {
+  background-color: #2271d3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#columnaDer .btn-primary {
+  background-color: #e70000; /* El color del borde original */
+  border-color: #2271d3; /* El color de fondo original */
+}
+
+#columnaIzIn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+#columnaDerIn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  position: absolute; /* Cambiado a fixed para fijarlo al final de la página */
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px; /* Ajusta según el espacio que quieras para el footer */
+}
+.contenedor-imagen {
+  width: 50%; /* Ancho del contenedor */
+  height: 50%; /* Altura del contenedor */
+  border: 1px solid #000; /* Borde del contenedor */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.contenedor-imagen img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Ajusta la altura proporcionalmente */
+}
